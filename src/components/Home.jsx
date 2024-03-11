@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <SideNav/>
-      <div className='w-[80%] h-full bg-orange-900'></div>
+      <div className='w-[80%] h-full '></div>
     </>
   )
 }
