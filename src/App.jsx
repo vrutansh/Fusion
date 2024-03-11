@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-     <div className='w-screen h-screen'>
+     <div className='bg-[#1F1E24] w-screen h-screen flex'>
       <Routes>
         <Route path='/' element={<Home />} />
       
