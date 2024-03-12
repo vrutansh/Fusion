@@ -10,8 +10,8 @@ const TopNav = () => {
 
         <i class="text-zinc-400 text-3xl ri-close-fill"></i>
 
-        <div className='absolute w-[50%] h-[50vh] bg-red-100 top-[90%]'>
-            <Link className=' bg-red-200 w-[100%] inline-block bg-orange-800 p-10 flex justify-center items-center'>
+        <div className='absolute w-[50%] h-[50vh] bg-zinc-200 top-[90%] '>
+            <Link className='hover:text-black hover:bg-zinc-300 font-semibold text-zinc-600 w-[100%] p-10 flex justify-center items-center border-zinc-100 border-b-2'>
               <img src="" alt="" />
               <span>Hello World</span>
             </Link>
