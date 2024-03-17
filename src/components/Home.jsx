@@ -53,7 +53,7 @@ const Home = () => {
 
         <div className='p-6 flex justify-between'>
              <h1 className='text-2xl font-semibold text-zinc-400'>Trending</h1> 
-             <DropDown title="Filter" options={['Tv', 'Movie', 'all']} func={(e)=>setcategory(e.target.value)}/>
+             <DropDown title="Filter" options={['tv', 'movie', 'all']} func={(e)=>setcategory(e.target.value)}/>
           </div>
 
         <HorizontalCards data={Trending}/>
