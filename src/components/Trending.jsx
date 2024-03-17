@@ -5,6 +5,7 @@ import DropDown from './templates/DropDown';
 import axios from '../utils/axios';
 import Cards from './templates/Cards';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import Loader from './templates/Loader';
 
 
 const Trending = () => {
@@ -56,7 +57,7 @@ const Trending = () => {
 
            <div className='flex items-center w-[80%]'>
                <TopNav/>
-               <DropDown title="Category" options={["movie", "tv", "All"]} func={
+               <DropDown title="Category" options={["movie", "tv", "all"]} func={
                 (e)=>setcategory(e.target.value)}/>
 
                 <div className='w-[2%]'></div>
@@ -69,7 +70,7 @@ const Trending = () => {
         </InfiniteScroll>
         
     </div>
-  ):<h1>Loading</h1>
+  ):<Loader/>
 }
 
 export default Trending

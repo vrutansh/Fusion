@@ -5,6 +5,7 @@ import axios from '../utils/axios'
 import Header from './templates/Header';
 import HorizontalCards from './templates/HorizontalCards';
 import DropDown from './templates/DropDown';
+import Loader from './templates/Loader';
 
 const Home = () => {
   document.title = "Homepage";
@@ -59,7 +60,7 @@ const Home = () => {
         <HorizontalCards data={Trending}/>
       </div>
     </>
-  ):<h1>Loading</h1>
+  ):<Loader/>
 }
 
 export default Home
