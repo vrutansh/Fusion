@@ -16,6 +16,8 @@ const Trending = () => {
    const [page, setpage] = useState([1]);
    const [hasMore, sethasMore] = useState(true)
 
+   document.title = "Fusion | Trending " + category.toUpperCase()
+
    const GetTrending =  async () => {
     try {  
          const { data } = await axios.get(`/trending/${category}/${duration}?page=${page}?language=en-US`);
