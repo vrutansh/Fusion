@@ -65,7 +65,7 @@ const Trending = () => {
                 (e)=>setduration(e.target.value)}/>
            </div>
         </div>
-        <InfiniteScroll dataLength={trending.length} next={GetTrending} hasMore={hasMore} loader={<h1>Loading....</h1>}>
+        <InfiniteScroll dataLength={trending.length} next={GetTrending} hasMore={hasMore} loader={<h1>Loading..</h1>}>
          <Cards data={trending} title={category}/>
         </InfiniteScroll>
         
